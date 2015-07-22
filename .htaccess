@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule (^[A-Za-z0-9_]+$) $1.php
+#只含有字母数字下划线的字符串改写为.php
+#但形如asdf/page的写法不会匹配
+RewriteRule ([A-Za-z0-9_/]+)/([A-Za-z0-9_]+$) $1/$2.php
+#因此有这行匹配asdf/page
+RewriteRule (.*)\.html$ $1.php
+#.html改写为.php
+RewriteRule (.*)/$ $1.php
+#abcd/改写为abcd.php
