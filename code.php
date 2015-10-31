@@ -10,7 +10,7 @@
         <script type="text/javascript" src="/scripts/util.js"></script>
         <script type="text/javascript" src="/scripts/code.js"></script>
                     
-        <title>cFrost.net</title>
+        <title>CODE - cFrost.net</title>
     </head>
     <body>
         <div id="__view__">
