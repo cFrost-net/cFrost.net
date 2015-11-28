@@ -10,10 +10,14 @@ header, #header {
     width: 100%;
     min-width: 800px;
     background-color: black;
-    //background-color: rgba(0%, 0%, 0%, 0.9);
+    background-color: rgba(0%, 0%, 0%, 0.9);
     position:fixed;
     z-index:9999999;
 }
+
+/*header:hover, #header:hover{
+    background-color: black;
+}*/
 /*标题栏样式_END*/
 
 /*====================================================================================*/
@@ -26,7 +30,7 @@ header, #header {
     padding-left: 3px;
     text-align: left;
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     float: left;
 }
 /**/
@@ -43,7 +47,7 @@ nav, #nav {
     padding-right: 3px;
     text-align: left;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     float: left;
 }
 /**/
@@ -56,20 +60,16 @@ nav, #nav {
     height: 33px;
     width: 270px; 
     line-height: 33px;
-    text-align: center;
-    font-size: 12px;
     float: right;
 }
 
 #searchForm > form > #sboxs {
-    margin: -1px 0 0 0;
-    padding: 0;
     border: 1px solid  #3385ff;
     background-color: #ffffff;
-    height: 22px;
+    height: 21px;
     width: 200px;
     vertical-align: middle;
-    line-height: 22px;
+    line-height: 21px;
     overflow: hidden;
     display: inline-block;
 }
@@ -86,11 +86,9 @@ nav, #nav {
 }
 
 #searchForm > form > #sbtns {
-    margin: -1px 0 0 0;
-    padding: 0;
     border: 1px solid  #3385ff;
     background-color: #ffffff;
-    height: 22px;
+    height: 21px;
     width: 60px;
     vertical-align: middle;
     line-height: 22px;
@@ -100,7 +98,7 @@ nav, #nav {
 }
 
 #searchForm > form > #sbtns > .searchBtn {
-      height: 22px;
+      height: 21px;
       width: 60px;
       border: 0;
       padding: 0;
@@ -126,6 +124,7 @@ nav, #nav {
     height: 33px;
     width: 110px;
     text-align: center;
+    font-size: 13px;
     line-height: 33px;
     padding-right: 3px;
     color: #fff;

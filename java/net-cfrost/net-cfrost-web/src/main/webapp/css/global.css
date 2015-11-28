@@ -15,4 +15,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.odd {
+    background-color: #dddddd;
+}
+
+.even {
+    background-color: #cccccc;
+}
+
+.code {
+    
+    margin-left: 33px;
+    margin-right: 33px;
+}
+.codeLine {
+    height: 24px;
+    line-height: 24px;
+}
+.tab1 {padding-left: 2rem;}
 /*全局字体，颜色_END*/
