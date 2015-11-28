@@ -4,9 +4,9 @@
 <html>
 <head>
 <title>cFrost.net</title>
-<%@ include file="../includes/header.jsp"%>
-<link rel="stylesheet" type="text/css" href="../css/blog.css" />
-<script type="text/javascript" src="../scripts/blog.js"></script>
+<%@ include file="../../commonPages/header.jsp"%>
+<link rel="stylesheet" type="text/css" href="../css/blog/blog.css" />
+<script type="text/javascript" src="../scripts/blog/blog.js"></script>
 
 <div id="blog_sidebar">
     <div class="blog_sidebar_title">主题</div>
@@ -16,4 +16,4 @@
 </div>
 <div id="blog">
 </div>         
-<%@ include file="../includes/footer.jsp"%>
+<%@ include file="../../commonPages/footer.jsp"%>

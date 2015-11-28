@@ -16,7 +16,7 @@
     <body>
         <div id="__view__">
             <div id="__body__" class="clearfix">
-                <%@ include file="includes/header.jsp"%>
+                <%@ include file="../../commonPages//header.jsp"%>
                 <div id="__frame__">
                     <div id="disk_fileTableDiv">
                         <table id="disk_fileTable" cellspacing="0px">
@@ -30,6 +30,6 @@
                 </div>
             </div>
         </div>
-        <%@ include file="includes/footer.jsp"%>
+        <%@ include file="../../commonPages//footer.jsp"%>
     </body>
 </html>
