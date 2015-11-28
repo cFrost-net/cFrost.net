@@ -8,7 +8,7 @@
     <!-- 定义处理请求URL为login.action的Action -->
         <action name="blog" class="net.cfrost.blog.action.BlogAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
-            <result name="success">/WEB-INF/pages/blog/blog.jsp</result>
+            <result name="success">/WEB-INF/modulePages/blog/blog.jsp</result>
         </action>
     </package>
 </struts>
