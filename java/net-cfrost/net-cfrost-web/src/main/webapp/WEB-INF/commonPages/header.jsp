@@ -35,12 +35,8 @@
                 &nbsp;&nbsp;&nbsp; <a
                     href="<%=request.getContextPath()%>/about.jsp">ABOUT</a>
             </nav>
-            <div id="userInfo">
-                <a href="javascript:void(0);">cFrost</a>
-                &nbsp;&nbsp;&nbsp; <a href="javascript:void(0);">注销</a>
-            </div>
-            <div id="searchForm">
-                <form method="get" action="<%=request.getContextPath()%>/doSearch.action">
+            <div id="sFms">
+                <form id="searchForm" method="get" action="<%=request.getContextPath()%>/doSearch.action">
                     <span id="sboxs"><input id="sBox"
                         class="searchBox" type="text" name="search"
                         value="Input to search..."
@@ -50,6 +46,8 @@
                         class="searchBtn" type="submit" value="Search" />
                     </span>
                 </form>
+            </div>
+            <div id="userInfo"><a href="javascript:void(0);">cFrost</a>&nbsp;<a href="javascript:void(0);"><div id="kik">&gt;</div></a>
             </div>
         </header>
         <div id="__body__">
