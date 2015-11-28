@@ -48,6 +48,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>cfrostnet</finalName>
+        <finalName>cfrost-net</finalName>
     </build>
 </project>
