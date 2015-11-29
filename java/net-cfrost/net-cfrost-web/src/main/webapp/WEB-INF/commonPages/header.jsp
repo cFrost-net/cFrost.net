@@ -6,19 +6,7 @@
 
 <script type="text/javascript" src="<%=request.getContextPath()%>/scripts/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/scripts/util.js"></script>
-
-
-<script type="text/javascript">
-    function searchBoxClick(id, value)
-    {
-        var txtBox=document.getElementById(id);
-        if (txtBox.value == "Input to search...") {
-            txtBox.value = "";
-        }else if(txtBox.value == "") {
-            txtBox.value = "Input to search...";
-        }
-    }
-</script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/scripts/header.js"></script>
 </head>
 <body>
     <div id="__page__">
@@ -28,11 +16,11 @@
             </div>
             <nav>
                 <a href="<%=request.getContextPath()%>/blog/blog">BLOG</a>
-                &nbsp;&nbsp;&nbsp; <a
+                &nbsp;&nbsp;&nbsp;&nbsp;<a
                     href="<%=request.getContextPath()%>/code.jsp">CODE</a>
-                &nbsp;&nbsp;&nbsp; <a
+                &nbsp;&nbsp;&nbsp;&nbsp;<a
                     href="<%=request.getContextPath()%>/disk.jsp">DISK</a>
-                &nbsp;&nbsp;&nbsp; <a
+                &nbsp;&nbsp;&nbsp;&nbsp;<a
                     href="<%=request.getContextPath()%>/about.jsp">ABOUT</a>
             </nav>
             <div id="sFms">
@@ -47,7 +35,17 @@
                     </span>
                 </form>
             </div>
-            <div id="userInfo"><a href="javascript:void(0);">cFrost</a>&nbsp;<a href="javascript:void(0);"><div id="kik">&gt;</div></a>
+            <div id="userInfo">
+                <li>
+                    <a href="javascript:void(0);" onclick="userInfoClicked();">cFrost</a>&nbsp;
+                    <a href="javascript:void(0);" onclick="userInfoClicked();"><div id="kik" class="img_triangle"></div></a>
+                <ul id="userMenu">
+                    <li class="child_li"><a href="javascript:void(0);">个人信息</a></li>
+                    <li class="child_li"><a href="javascript:void(0);">修改密码</a></li>
+                    <li class="child_li"><a href="javascript:void(0);">设置</a></li>
+                    <li class="last_child_li"><a href="javascript:void(0);">注销</a></li>
+                </ul>
+                </li>
             </div>
         </header>
         <div id="__body__">

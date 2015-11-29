@@ -138,12 +138,39 @@ nav, #nav {
 
 /*====================================================================================*/
 
-#kik {
+.img_triangle {
     position:absolute;
     top:50%;
-    transform: translateY(-50%) rotate(90deg);
-    height:12px;
-    width:12px;
-    line-height:12px;
+    transform: translateY(-40%) rotate(0deg);
+    background-image: url(../images/triangle.png);
+    background-size:10px 8px;
+    width:10px;
+    height:8px;
+    line-height:10px;
+    font-size:10px;
     display:inline-block;
+}
+
+#userInfo> li > ul {
+    margin:0;
+    padding:0 10px 0 10px;
+    background-color:rgba(10%, 10%, 10%, 0.7);
+    display:none;
+}
+
+#userInfo > li > ul{
+    
+}
+
+#userInfo > * .child_li{
+    border-bottom: 1px solid #aaa;
+}
+
+.last_child_li{
+    border:none;
+}
+
+#userInfo > li, #userInfo > * li {
+    text-align:center;
+    list-style-type:none;
 }
