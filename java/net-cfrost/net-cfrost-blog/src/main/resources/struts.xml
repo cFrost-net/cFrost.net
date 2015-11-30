@@ -9,12 +9,12 @@
     <!-- 定义处理请求URL为login.action的Action -->
         <action name="loadBlogBody_*" class="net.cfrost.core.web.action.ForwardAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
-            <result name="success">/blogs/{1}.blog</result>
+            <result name="success">/WEB-INF/dev-resources/blogs/{1}.blog</result>
         </action>
     
         <action name="loadBlog" class="net.cfrost.core.web.action.ForwardAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
-            <result name="success">/json/blogs.json</result>
+            <result name="success">/WEB-INF/dev-resources/json/blogs.json</result>
         </action>
         
         <action name="" class="net.cfrost.core.web.action.ForwardAction">
