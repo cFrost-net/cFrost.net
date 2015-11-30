@@ -5,21 +5,21 @@
             "title":"Blog容器测试",
             "date":"2015年6月30日",
             "tags":"容器测试|,图片测试|,主题包含特殊字符测试|,空 格|,叹号!|,竖线||,逗号,",
-            "body":"../blogs/0.blog",
+            "body":"loadBlogBody_0.action",
             "author":"cFrost"
         },
         {
             "title":"Blog容器测试2",
             "date":"2015年6月30日",
             "tags":"多行内容测试",
-            "body":"../blogs/2.blog",
+            "body":"loadBlogBody_2.action",
             "author":"cFrost"
         },
         {
             "title":"OS X 配置Apache",
             "date":"2015年6月30日",
             "tags":"Mac|,Apache|,PHP|,UNIX/Linux",
-            "body":"../blogs/1.blog",
+            "body":"loadBlogBody_1.action",
             "author":"cFrost"
         }
     ],
