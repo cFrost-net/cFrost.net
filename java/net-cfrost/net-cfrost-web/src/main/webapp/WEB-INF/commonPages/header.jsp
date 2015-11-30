@@ -15,13 +15,13 @@
                 <a href="<%=request.getContextPath()%>">cFrost.net</a>
             </div>
             <nav>
-                <a href="<%=request.getContextPath()%>/blog/blog">BLOG</a>
+                <a href="<%=request.getContextPath()%>/blog/">BLOG</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="<%=request.getContextPath()%>/code.jsp">CODE</a>
+                    href="<%=request.getContextPath()%>/code/">CODE</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="<%=request.getContextPath()%>/disk.jsp">DISK</a>
+                    href="<%=request.getContextPath()%>/disk/">DISK</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="<%=request.getContextPath()%>/about.jsp">ABOUT</a>
+                    href="<%=request.getContextPath()%>/about/">ABOUT</a>
             </nav>
             <div id="sFms">
                 <form id="searchForm" method="get" action="<%=request.getContextPath()%>/doSearch.action">

@@ -7,14 +7,14 @@
         <artifactId>net-cfrost</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>net-cfrost-blog</artifactId>
-    <name>blog.cfrost.net</name>
-    <description>blog.cfrost.net</description>
+    <artifactId>net-cfrost-core</artifactId>
+    <name>net.cfrost.core</name>
+    <description>net.cfrost.core</description>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>net-cfrost-core</artifactId>
+            <artifactId>net-cfrost-security</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
