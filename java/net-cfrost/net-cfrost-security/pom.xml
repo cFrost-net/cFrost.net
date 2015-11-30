@@ -10,4 +10,11 @@
     <artifactId>net-cfrost-security</artifactId>
     <name>net.cfrost.security</name>
     <description>net.cfrost.security</description>
+    
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+    </dependencies>
 </project>

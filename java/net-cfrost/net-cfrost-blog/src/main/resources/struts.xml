@@ -3,21 +3,24 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
+
+    <!-- 支持Spring -->
+    <constant name="struts.objectFactory" value="spring" />
     
     <!-- struts2的action必须放在一个指定的包空间下定义 -->
     <package name="blog" namespace="/blog" extends="struts-default">
     <!-- 定义处理请求URL为login.action的Action -->
-        <action name="loadBlogBody_*" class="net.cfrost.core.web.action.ForwardAction">
+        <action name="loadBlogBody_*" class="blogAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success">/WEB-INF/dev-resources/blogs/{1}.blog</result>
         </action>
     
-        <action name="loadBlog" class="net.cfrost.core.web.action.ForwardAction">
+        <action name="loadBlog" class="blogAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success">/WEB-INF/dev-resources/json/blogs.json</result>
         </action>
         
-        <action name="" class="net.cfrost.core.web.action.ForwardAction">
+        <action name="" class="forwardAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success">/WEB-INF/modulePages/blog/blog-index.jsp</result>
         </action>

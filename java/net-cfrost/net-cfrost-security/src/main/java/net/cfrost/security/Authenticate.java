@@ -1,7 +1,7 @@
 package net.cfrost.security;
 
 public class Authenticate {
-    public static boolean longinCheck() {
+    public static boolean loginCheck() {
         return true;
     }
 }
