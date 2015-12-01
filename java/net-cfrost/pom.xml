@@ -13,6 +13,7 @@
         <module>net-cfrost-blog</module>
         <module>net-cfrost-security</module>
         <module>net-cfrost-core</module>
+        <module>net-cfrost-util</module>
     </modules>
 
     <properties>

@@ -13,6 +13,9 @@
         <dependent-module archiveName="net-cfrost-security-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/net-cfrost-security/net-cfrost-security">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="net-cfrost-util-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/net-cfrost-util/net-cfrost-util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/net-cfrost-web/target/classes"/>
         <property name="context-root" value="cfrost-net"/>
     </wb-module>
