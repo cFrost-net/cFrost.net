@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
-        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
-        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 
     <!-- 支持Spring -->
@@ -10,12 +10,17 @@
     <!-- struts2的action必须放在一个指定的包空间下定义 -->
     <package name="blog" namespace="/blog" extends="struts-default">
     <!-- 定义处理请求URL为login.action的Action -->
-        <action name="loadBlogBody_*" class="blogAction">
+        <action name="test" class="blogAction" method="test">
+        <!-- 定义处理结果字符串和资源之间的映射关系 -->
+            <result name="success">/index.jsp</result>
+        </action>
+        
+        <action name="loadBlogBody_*" class="forwardAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success">/WEB-INF/dev-resources/blogs/{1}.blog</result>
         </action>
     
-        <action name="loadBlog" class="blogAction">
+        <action name="loadBlog" class="forwardAction">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success">/WEB-INF/dev-resources/json/blogs.json</result>
         </action>

@@ -16,8 +16,8 @@ public class BlogAction extends ActionSupport {
         this.blogService = blogService;
     }
 
-    public String execute() throws Exception {
-        System.out.println(blogService.ShowText());
+    public String test() throws Exception {
+        this.blogService.ShowText();
         return SUCCESS;
     }
 }
