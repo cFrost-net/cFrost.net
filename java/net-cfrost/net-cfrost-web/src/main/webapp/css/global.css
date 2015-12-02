@@ -24,7 +24,6 @@ a:hover {
 .odd {
     background-color: #dddddd;
 }
-
 .even {
     background-color: #cccccc;
 }
@@ -38,5 +37,35 @@ a:hover {
     height: 24px;
     line-height: 24px;
 }
+
 .tab1 {padding-left: 2rem;}
+
+.a_btn{
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    background:#3385ff;
+}
+
+.a_btn_txt{
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    line-height: 22px;
+    font-size: 12px;
+    padding: 0;
+    margin: 0 4px;
+    color:#ffffff; 
+}
+
+.a_btn:hover{
+    background:#317ef3;
+    text-decoration: none; 
+}
 /*全局字体，颜色_END*/
