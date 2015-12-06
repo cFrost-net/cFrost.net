@@ -11,7 +11,7 @@
     </context-param>
     <context-param>
         <param-name>webFolders</param-name>
-        <param-value>css,images,scripts,files</param-value>
+        <param-value>css,images,scripts/lib/*,scripts,files</param-value>
     </context-param>
 
     <filter>

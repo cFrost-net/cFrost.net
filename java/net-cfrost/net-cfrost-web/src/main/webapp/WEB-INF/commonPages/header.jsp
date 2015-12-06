@@ -11,7 +11,7 @@
     href="<%=request.getContextPath()%>/css/footer.css" />
 
 <script type="text/javascript"
-    src="<%=request.getContextPath()%>/scripts/jquery-2.1.4.js"></script>
+    src="<%=request.getContextPath()%>/scripts/lib/jquery-2.1.4.js"></script>
 <script type="text/javascript"
     src="<%=request.getContextPath()%>/scripts/util.js"></script>
 <script type="text/javascript"
@@ -29,6 +29,8 @@
                     href="<%=request.getContextPath()%>/code/">CODE</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;<a
                     href="<%=request.getContextPath()%>/disk/">DISK</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a
+                    href="http://nexus.cfrost.net" target="_Blank">NEXUS</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;<a
                     href="<%=request.getContextPath()%>/about/">ABOUT</a>
             </nav>
@@ -60,7 +62,8 @@
                             href="javascript:void(0);">设置</a></li>
                         <li class="last_child_li"><a
                             href="javascript:void(0);">注销</a></li>
-                    </ul></li>
+                    </ul>
+                </li>
             </div>
         </header>
         <div id="__body__">

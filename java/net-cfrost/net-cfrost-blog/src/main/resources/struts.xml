@@ -8,7 +8,7 @@
     <constant name="struts.objectFactory" value="spring" />
     
     <!-- struts2的action必须放在一个指定的包空间下定义 -->
-    <package name="blog" namespace="/blog" extends="struts-default">
+    <package name="blog" namespace="/blog" extends="base-struct">
     <!-- 定义处理请求URL为login.action的Action -->
         <action name="test" class="blogAction" method="test">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->

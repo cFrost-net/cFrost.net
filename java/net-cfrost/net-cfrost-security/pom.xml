@@ -18,6 +18,11 @@
         </dependency>
         
         <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+        </dependency>
+        
+        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>net-cfrost-util</artifactId>
             <version>${project.version}</version>

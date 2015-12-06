@@ -10,11 +10,29 @@
     <!-- 启用actionname中的/支持，但*通配符不会匹配/，完美~_~ -->
     <constant name="struts.enable.SlashesInActionNames" value="true"/>
 
-    <package name="base" namespace="/" extends="struts-default">
+    <package name="base-struct" namespace="/" extends="struts-default">
+    
+        <interceptors>  
+            <interceptor name="permissionControlInterceptor" class="net.cfrost.security.interceptor.PermissionControlInterceptor" />  
+            <interceptor-stack name="permissionControlStack">
+                <interceptor-ref name="permissionControlInterceptor"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>  
+          
+        <default-interceptor-ref name="permissionControlStack" />
+    </package>
+    
+    <package name="root" namespace="/" extends="base-struct">
+    
     <!-- 定义处理请求URL为login.action的Action -->
+        <action name="index" class="net.cfrost.core.web.action.ForwardAction">
+            <!-- 定义处理结果字符串和资源之间的映射关系 -->
+            <result name="success">/WEB-INF/index.jsp</result>
+        </action>
         <action name="*" class="net.cfrost.core.web.action.ForwardAction">
-        <!-- 定义处理结果字符串和资源之间的映射关系 -->
+            <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success" type="redirect">{1}/</result>
         </action>
-    </package>
+    </package> 
 </struts>
