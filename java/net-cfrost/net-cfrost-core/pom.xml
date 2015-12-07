@@ -20,7 +20,12 @@
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-spring-plugin</artifactId>
         </dependency>
-        
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>net-cfrost-security</artifactId>

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @SuppressWarnings("serial")
-public class BaseEntity implements Serializable, Comparable<BaseEntity> {
+public abstract class BaseEntity<T> implements Serializable, Comparable<T> {
     
     private Long id;
     private Long createBy;
@@ -61,21 +61,23 @@ public class BaseEntity implements Serializable, Comparable<BaseEntity> {
         this.ifDel = ifDel;
     }
 
-    @Override
-    public int compareTo(BaseEntity anotherEntity) {
+    @Override 
+    public int compareTo(T o) {
         
-        if(anotherEntity == null)
+        if(o == null)
             return 1;
         
-        if(!(this.getClass().isAssignableFrom(anotherEntity.getClass())))
+        if(!(this.getClass().isAssignableFrom(o.getClass())))
             return 1;
+        
+        BaseEntity<?> obj = (BaseEntity<?>)o;
         
         if(this.getId() == null)
             return 1;
         
-        if(anotherEntity.getId() == null)
+        if(obj.getId() == null)
             return -1;
         
-        return this.getId().compareTo(anotherEntity.getId());
+        return this.getId().compareTo(obj.getId());
     }
 }
