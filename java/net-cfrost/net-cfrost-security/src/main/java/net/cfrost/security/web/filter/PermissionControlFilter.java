@@ -1,4 +1,4 @@
-package net.cfrost.security.filter;
+package net.cfrost.security.web.filter;
 
 import java.io.IOException;
 
@@ -8,13 +8,15 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
 
-public class LoginFilter implements Filter {
+import net.cfrost.util.web.UrlTool;
+
+public class PermissionControlFilter implements Filter {
 
     @Override
     public void init(FilterConfig paramFilterConfig) throws ServletException {
         // TODO Auto-generated method stub
-
     }
 
     @Override
@@ -22,14 +24,17 @@ public class LoginFilter implements Filter {
             ServletResponse paramServletResponse, FilterChain paramFilterChain)
             throws IOException, ServletException {
         // TODO Auto-generated method stub
-        //System.out.println("Longin Filter");
+        
+        //模块名称 /xxx/yyy/zzz中的xxx
+        String moduleName = UrlTool.findModuleName((HttpServletRequest)paramServletRequest);
+
+        System.out.println("PermissionControl:Module Name is "+moduleName);
         paramFilterChain.doFilter(paramServletRequest, paramServletResponse);
     }
 
     @Override
     public void destroy() {
         // TODO Auto-generated method stub
-
+        
     }
-
 }

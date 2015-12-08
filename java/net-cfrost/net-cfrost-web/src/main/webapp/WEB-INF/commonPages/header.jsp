@@ -32,6 +32,8 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;<a
                     href="http://nexus.cfrost.net" target="_Blank">NEXUS</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;<a
+                    href="http://mail.cfrost.net" target="_Blank">E-MAIL</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a
                     href="<%=request.getContextPath()%>/about/">ABOUT</a>
             </nav>
             <div id="sFms">

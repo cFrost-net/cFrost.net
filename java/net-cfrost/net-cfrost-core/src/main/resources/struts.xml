@@ -13,7 +13,7 @@
     <package name="base-struct" namespace="/" extends="struts-default">
     
         <interceptors>  
-            <interceptor name="permissionControlInterceptor" class="net.cfrost.security.interceptor.PermissionControlInterceptor" />  
+            <interceptor name="permissionControlInterceptor" class="permissionControlInterceptor" />  
             <interceptor-stack name="permissionControlStack">
                 <interceptor-ref name="permissionControlInterceptor"/>
                 <interceptor-ref name="defaultStack"/>
@@ -26,11 +26,11 @@
     <package name="root" namespace="/" extends="base-struct">
     
     <!-- 定义处理请求URL为login.action的Action -->
-        <action name="index" class="net.cfrost.core.web.action.ForwardAction">
+        <action name="index" class="forwardAction">
             <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success">/WEB-INF/index.jsp</result>
         </action>
-        <action name="*" class="net.cfrost.core.web.action.ForwardAction">
+        <action name="*" class="forwardAction">
             <!-- 定义处理结果字符串和资源之间的映射关系 -->
             <result name="success" type="redirect">{1}/</result>
         </action>

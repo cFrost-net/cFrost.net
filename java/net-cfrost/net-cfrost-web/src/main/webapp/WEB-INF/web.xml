@@ -28,7 +28,7 @@
     </filter>
     <filter>
         <filter-name>permissionControlFilter</filter-name>
-        <filter-class>net.cfrost.security.filter.PermissionControlFilter</filter-class>
+        <filter-class>net.cfrost.security.web.filter.PermissionControlFilter</filter-class>
     </filter>
 
     <filter-mapping>
