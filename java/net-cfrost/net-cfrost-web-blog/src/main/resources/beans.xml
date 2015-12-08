@@ -14,10 +14,10 @@
            http://www.springframework.org/schema/tx   
            http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
 
-    <bean id="blogAction" class="net.cfrost.blog.action.BlogAction">
+    <bean id="blogAction" class="net.cfrost.web.module.blog.action.BlogAction">
         <property name="blogService" ref="blogService"/>
     </bean>
     
-    <bean id="blogService" class="net.cfrost.blog.service.impl.BlogService">
+    <bean id="blogService" class="net.cfrost.web.module.blog.service.impl.BlogService">
     </bean>
 </beans>

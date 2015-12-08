@@ -29,7 +29,13 @@
 
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>net-cfrost-blog</artifactId>
+            <artifactId>net-cfrost-web-root</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>net-cfrost-web-blog</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

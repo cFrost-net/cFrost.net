@@ -13,6 +13,6 @@
            http://www.springframework.org/schema/tx   
            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
-    <bean id="forwardAction" class="net.cfrost.core.web.action.ForwardAction">
+    <bean id="forwardAction" class="net.cfrost.web.core.action.ForwardAction">
     </bean>
 </beans>
