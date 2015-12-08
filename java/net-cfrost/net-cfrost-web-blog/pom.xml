@@ -7,9 +7,9 @@
         <artifactId>net-cfrost</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>net-cfrost-core</artifactId>
-    <name>net.cfrost.core</name>
-    <description>net.cfrost.core</description>
+    <artifactId>net-cfrost-web-blog</artifactId>
+    <name>blog.cfrost.net</name>
+    <description>blog.cfrost.net</description>
 
     <dependencies>
         <dependency>
@@ -28,7 +28,7 @@
 
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>net-cfrost-security</artifactId>
+            <artifactId>net-cfrost-core</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
