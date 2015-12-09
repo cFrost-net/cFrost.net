@@ -53,7 +53,7 @@ public class UrlTool {
             moduleName = URI.substring(0, URI.indexOf("/"));
 
         System.out.println("realURI:"+realURI);
-        System.out.println("moduleName:"+moduleName);
+//        System.out.println("moduleName:"+moduleName);
         
         return moduleName;
     }

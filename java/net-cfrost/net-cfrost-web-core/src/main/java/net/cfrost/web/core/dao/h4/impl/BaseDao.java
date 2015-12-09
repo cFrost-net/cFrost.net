@@ -10,7 +10,7 @@ import org.hibernate.SessionFactory;
 import net.cfrost.web.core.dao.h4.IBaseDao;
 import net.cfrost.web.core.domain.BaseEntity;
 
-public class BaseDao<T extends BaseEntity<?>> implements IBaseDao<T> {
+public abstract class BaseDao<T extends BaseEntity<?>> implements IBaseDao<T> {
     
     private SessionFactory sessionFactory;    
 
