@@ -12,19 +12,19 @@ html, body {
     top:0px;
     left:0px;
     right:0px;
-    //background:green;
+    /*background:green;*/
 }
 
 #__body__ {
     margin-top:32px;
     margin-bottom:60px;
     position:relative;
-    //background:blue;
+    /*background:blue;*/
 }
 
 #__view__ {
     position:relative;
     overflow:hidden;
-    //zoom:1;
-    //background:yellow;
+    /*zoom:1;*/
+    /*background:yellow;*/
 }

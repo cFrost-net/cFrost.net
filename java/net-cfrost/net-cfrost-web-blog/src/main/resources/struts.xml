@@ -17,7 +17,7 @@
         </action>
         
         <action name="" class="forwardAction">
-            <result name="success">/WEB-INF/modulePages/blog/blog-index.jsp</result>
+            <result name="success">/WEB-INF/modulePages/blog/index.jsp</result>
         </action>
         
         <action name="*" class="forwardAction">
