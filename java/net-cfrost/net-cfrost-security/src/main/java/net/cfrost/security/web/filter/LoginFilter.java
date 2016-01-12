@@ -22,7 +22,7 @@ public class LoginFilter implements Filter {
             ServletResponse paramServletResponse, FilterChain paramFilterChain)
             throws IOException, ServletException {
         // TODO Auto-generated method stub
-        //System.out.println("Longin Filter");
+        System.out.println("Longin Filter - disabled");
         paramFilterChain.doFilter(paramServletRequest, paramServletResponse);
     }
 
