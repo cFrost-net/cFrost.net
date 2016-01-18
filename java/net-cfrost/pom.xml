@@ -10,11 +10,11 @@
     <description>cFrost.net</description>
     <modules>
         <module>net-cfrost-web</module>
-        <module>net-cfrost-web-blog</module>
+        <module>net-cfrost-web-root</module>
         <module>net-cfrost-web-core</module>
+        <module>net-cfrost-web-blog</module>
         <module>net-cfrost-security</module>
         <module>net-cfrost-util</module>
-        <module>net-cfrost-web-root</module>
     </modules>
 
     <properties>
