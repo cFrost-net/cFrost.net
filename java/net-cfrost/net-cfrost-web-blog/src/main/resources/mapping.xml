@@ -5,7 +5,7 @@
   
 <hibernate-configuration>  
     <session-factory>  
-        <!-- 引入需要映射的类 -->  
-        <mapping class="net.cfrost.web.module.blog.domain.Blog"/>  
+        <!-- 引入需要映射的类 -->
+        <mapping class="net.cfrost.web.module.blog.domain.Blog"/>
     </session-factory>  
 </hibernate-configuration> 
