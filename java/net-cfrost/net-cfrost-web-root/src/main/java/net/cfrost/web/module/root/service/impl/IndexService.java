@@ -17,12 +17,12 @@ public class IndexService extends BaseService implements IIndexService {
 
     @Override
     public DevProcess findDevProcessById(Long id) {
-        return this.devProcessDao.get(DevProcess.class, id);
+        return this.devProcessDao.get(id);
     }
 
     @Override
     public List<DevProcess> findAllDevProcesses() {
-        return this.devProcessDao.findAll(DevProcess.class);
+        return this.devProcessDao.findAll();
     }
 
 }

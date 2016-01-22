@@ -1,6 +1,7 @@
 package net.cfrost.web.module.blog.action;
 
 import net.cfrost.web.core.action.BaseAction;
+import net.cfrost.web.module.blog.dao.impl.BlogDao;
 import net.cfrost.web.module.blog.service.IBlogService;
 
 public class BlogAction extends BaseAction {
