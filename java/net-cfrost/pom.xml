@@ -18,6 +18,8 @@
     </modules>
 
     <properties>
+        <jsp.version>2.0</jsp.version>
+        <servlet.version>2.4</servlet.version>
         <hibernate.version>5.0.5.Final</hibernate.version>
         <springframework.version>4.2.3.RELEASE</springframework.version>
         <struts2.version>2.3.24.1</struts2.version>
@@ -30,13 +32,13 @@
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>
-                <version>2.4</version>
+                <version>${servlet.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>javax.servlet.jsp</groupId>
                 <artifactId>jsp-api</artifactId>
-                <version>2.0</version>
+                <version>${jsp.version}</version>
                 <scope>provided</scope>
             </dependency>
 
