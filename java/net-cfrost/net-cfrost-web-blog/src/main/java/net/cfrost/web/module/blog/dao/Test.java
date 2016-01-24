@@ -8,6 +8,5 @@ public class Test {
         Blog blog = new Blog();
         XBlog blog2 = new XBlog();
         System.out.println(blog.compareTo(blog2));
-        
     }
 }
