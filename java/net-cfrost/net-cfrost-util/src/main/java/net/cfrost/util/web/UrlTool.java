@@ -1,16 +1,9 @@
 package net.cfrost.util.web;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.web.context.ContextLoader;
-import org.springframework.web.context.WebApplicationContext;
-
 public class UrlTool {
-    public static String findModuleName(HttpServletRequest httpServletRequest){
-        
-        WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();    
-        ServletContext servletContext = webApplicationContext.getServletContext(); 
+    public static String findModuleName(HttpServletRequest httpServletRequest, String[] webFolders){
         
         //去掉项目名称后的URI
         String realURI = UrlTool.findRealURI(httpServletRequest);
@@ -23,8 +16,6 @@ public class UrlTool {
         //  /xxx/yyy/zzz to xxx/yyy/zzz
         if(URI.startsWith("/"))
             URI = URI.replaceFirst("/", "");
-        
-        String[] webFolders = servletContext.getInitParameter("webFolders").trim().split(",");
         
         // webFolders/xxx/yyy to xxx/yyy
         for(String webFolder : webFolders){
