@@ -1,17 +1,21 @@
 package net.cfrost.web.module.blog.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import net.cfrost.web.core.domain.BaseEntity;
 
 @SuppressWarnings("serial")
-public class Blog extends BaseEntity<Blog> {
-    private Long id;
-
-    public Long getId() {
-        return id;
+@Entity
+@Table(name="blog")
+public class Blog extends BaseEntity<Blog> {  
+    @Column
+    private String name;
+    public String getName() {
+        return name;
     }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
     }
-    
 }

@@ -3,9 +3,19 @@ package net.cfrost.web.core.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+import net.cfrost.web.core.exception.EntityCompareException;
+
 @SuppressWarnings("serial")
-public abstract class BaseEntity<T> implements Serializable, Comparable<T> {
+@MappedSuperclass
+public abstract class BaseEntity<T extends BaseEntity<?>> implements Serializable, Comparable<T> {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long createBy;
     private Long modifyBy;
@@ -62,15 +72,15 @@ public abstract class BaseEntity<T> implements Serializable, Comparable<T> {
     }
 
     @Override 
-    public int compareTo(T o) {
+    public int compareTo(T obj) {
+        if (this == obj)
+            return 0;
         
-        if(o == null)
+        if(obj == null)
             return 1;
         
-        if(!(this.getClass().isAssignableFrom(o.getClass())))
-            return 1;
-        
-        BaseEntity<?> obj = (BaseEntity<?>)o;
+        if (getClass() != obj.getClass())
+            throw new EntityCompareException("两比较对象类型不一致");
         
         if(this.getId() == null)
             return 1;
@@ -79,5 +89,30 @@ public abstract class BaseEntity<T> implements Serializable, Comparable<T> {
             return -1;
         
         return this.getId().compareTo(obj.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((this.getId() == null) ? 0 : this.getId().hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        BaseEntity<?> other = (BaseEntity<?>) obj;
+        if (this.getId() == null) {
+            if (other.getId() != null)
+                return false;
+        } else if (!this.getId().equals(other.getId()))
+            return false;
+        return true;
     }
 }

@@ -7,9 +7,9 @@ import javax.persistence.Table;
 
 import net.cfrost.web.core.domain.BaseEntity;
 
-
 @SuppressWarnings("serial")
 @Entity
-@Table(name="tag")
-public class Tag extends BaseEntity<Tag> {
+@Table(name="news")
+public class News extends BaseEntity<News> {   
+    
 }
