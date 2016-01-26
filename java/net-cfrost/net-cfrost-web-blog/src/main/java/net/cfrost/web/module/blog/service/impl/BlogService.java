@@ -21,8 +21,8 @@ public class BlogService implements IBlogService {
         this.blogDao.saveOrUpdate(blog);
         blog = this.blogDao.get(blog.getId());
         System.out.println("new:"+blog.getId()+":"+blog.getName());
-        blog = this.blogDao.get(3L);
-        System.out.println("3:"+blog.getName());
+//        blog = this.blogDao.get(3L);
+//        System.out.println("3:"+blog.getName());
     }
     
     public void setBlogDao(IBlogDao blogDao) {

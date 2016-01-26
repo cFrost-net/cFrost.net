@@ -3,10 +3,8 @@ package net.cfrost.web.core.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Transient;
 
 import net.cfrost.web.core.exception.EntityCompareException;
 
@@ -14,9 +12,9 @@ import net.cfrost.web.core.exception.EntityCompareException;
 @MappedSuperclass
 public abstract class BaseEntity<T extends BaseEntity<?>> implements Serializable, Comparable<T> {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Transient
     private Long id;
+    @Transient
     private Long createBy;
     private Long modifyBy;
     private Date createDate;
