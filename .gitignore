@@ -1,6 +1,6 @@
 .DS_Store
-db_config.properties
 target/
 .project
 .classpath
 .settings/
+db_config.properties
