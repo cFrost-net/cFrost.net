@@ -3,4 +3,4 @@ target/
 .project
 .classpath
 .settings/
-db_config.properties
+config.properties
