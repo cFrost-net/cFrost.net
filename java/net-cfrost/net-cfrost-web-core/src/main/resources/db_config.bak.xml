@@ -40,9 +40,9 @@
         <property name="dataSource" ref="dataSource"/>
         <!-- mappingResouces属性用来列出全部映射文件 -->
         <!--<property name="mappingResources">
-            <list> -->
-                <!-- 以下用来列出Hibernate映射文件 -->
-        <!--        <value>net/cfrost/.hbm.xml</value>
+            <list>
+            <!- 以下用来列出Hibernate映射文件 ->
+            <value>net/cfrost/.hbm.xml</value>
             </list>
         </property>    -->
         <property name="mappingJarLocations">
