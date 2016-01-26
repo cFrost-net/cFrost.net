@@ -21,6 +21,7 @@
         <jsp.version>2.0</jsp.version>
         <servlet.version>2.4</servlet.version>
         <hibernate.version>5.0.5.Final</hibernate.version>
+        <c3p0.version>0.9.5.2</c3p0.version>
         <jta.version>1.1</jta.version>
         <mysqljdbc.version>5.1.38</mysqljdbc.version>
         <springframework.version>4.2.3.RELEASE</springframework.version>
@@ -80,6 +81,11 @@
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mchange</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>${c3p0.version}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
